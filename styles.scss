@@ -1,0 +1,210 @@
+// sass --watch --sourcemap=none --style expanded styles.scss:styles.css
+
+@media only screen and (max-width: 620px) {
+	.full-width {
+		width: 100% !important;
+		min-width: 100% !important;
+	}
+
+	.hide-on-mobile { display: none !important; }
+
+	.show-on-mobile {
+		display: block !important;
+		font-size: 14px !important;
+		max-height: 100% !important;
+		line-height: normal !important;
+	}
+
+	.fluid-img {
+		height: auto !important;
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+
+	.container-inner {
+		padding: 34px 20px !important;
+	}
+
+	.p {
+		font-size: 14px !important; 
+		line-height: 24px !important; 
+		margin-bottom: 20px !important;
+	}
+
+	.p.last { margin-bottom: 0 !important; }
+
+	.h1 {
+		font-size: 20px !important; 
+		line-height: 30px !important; 
+	}
+
+	.block-elem {
+		display: block !important;
+		float: none !important;
+		width: 100% !important;
+	}
+
+	.height-auto { height: auto !important; }
+
+	.width-auto { width: auto !important }
+
+	.inline-elem { display: inline !important; }
+
+	.center-elem { margin: 0 auto; }
+
+	.text-center { text-align: center !important; }
+	
+	.text-left { text-align: left !important; }
+
+	.text-right { text-align: right !important; }
+
+	.va-top { vertical-align: top !important; }
+
+	.va-bottom { vertical-align: bottom !important; }
+
+	.weight-normal { font-weight: normal !important; }
+
+	.weight-bold { font-weight: bold !important; }
+
+	.font-italic { font-style: italic !important; }
+
+	.font-italic-reset { font-style: normal !important; }
+
+	.border-reset { border: none !important; }
+
+	// Margin Top
+	$mt: 0;
+
+	@while ( $mt < 41 ) {
+		.mt-#{$mt} { margin-top: $mt + px !important; }
+
+		$mt: $mt + 1;
+	}
+
+	// Margin Bottom
+	$mb: 0;
+
+	@while ( $mb < 41 ) {
+		.mb-#{$mb} { margin-bottom: $mb + px !important; }
+
+		$mb: $mb + 1;
+	}
+	
+	// Margin Left
+	$ml: 0;
+
+	@while ( $ml < 41 ) {
+		.ml-#{$ml} { margin-left: $ml + px !important; }
+
+		$ml: $ml + 1;
+	}
+
+	// Margin Right
+	$mr: 0;
+
+	@while ( $mr < 41 ) {
+		.mr-#{$mr} { margin-right: $mr + px !important; }
+
+		$mr: $mr + 1;
+	}
+
+	// Margin Top and Bottom
+	$mtb: 0;
+
+	@while ( $mtb < 41 ) {
+		.mtb-#{$mtb} {
+			margin-top: $mtb + px !important;
+			margin-bottom: $mtb + px !important;
+		}
+
+		$mtb: $mtb + 1;
+	}
+
+	// Padding Top
+	$pt: 0;
+
+	@while ( $pt < 41 ) {
+		.pt-#{$pt} { padding-top: $pt + px !important; }
+
+		$pt: $pt + 1;
+	}
+
+	// Padding Bottom
+	$pb: 0;
+
+	@while ( $pb < 41 ) {
+		.pb-#{$pb} { padding-bottom: $pb + px !important; }
+
+		$pb: $pb + 1;
+	}
+
+	// Padding Left
+	$pl: 0;
+
+	@while ( $pl < 41 ) {
+		.pl-#{$pl} { padding-left: $pl + px !important; }
+
+		$pl: $pl + 1;
+	}
+
+	// Padding Right
+	$pr: 0;
+
+	@while ( $pr < 41 ) {
+		.pr-#{$pr} { padding-right: $pr + px !important; }
+
+		$pr: $pr + 1;
+	}
+
+	// Equal Padding
+	$pad: 0;
+
+	@while ( $pad < 41 ) {
+		.pad-#{$pad} { padding: $pad + px !important; }
+
+		$pad: $pad + 1;
+	}
+
+	// Padding Left and Right
+	$plr: 0;
+
+	@while ( $plr < 41 ) {
+		.plr-#{$plr} {
+			padding-left: $plr + px !important;
+			padding-right: $plr + px !important;
+		}
+
+		$plr: $plr + 1;
+	}
+
+	// Padding Top and Bottom
+	$ptb: 0;
+
+	@while ( $ptb < 41 ) {
+		.ptb-#{$ptb} {
+			padding-top: $ptb + px !important;
+			padding-bottom: $ptb + px !important;
+		}
+
+		$ptb: $ptb + 1;
+	}
+
+	// Font Size
+	$font: 1;
+
+	@while ( $font < 51 ) {
+		.font-#{$font} { font-size: $font + px !important; }
+
+		$font: $font + 1;
+	}
+
+	// Line Height
+	.lh-reset { line-height: normal !important; }
+	$lh: 1;
+
+	@while ( $lh < 51 ) {
+		.lh-#{$lh} { line-height: $lh + px !important; }
+
+		$lh: $lh + 1;
+	}
+}
