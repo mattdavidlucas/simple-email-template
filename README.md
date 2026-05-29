@@ -1,6 +1,6 @@
-# Simple Email Template
+# Simple Email Template System
 
-A simple starter email template for your next campaign.
+A simple email template system I setup for testing Claude Design.
 
 ## Tooling:
 
@@ -10,9 +10,9 @@ A simple starter email template for your next campaign.
 
 ## Tooling Commands:
 
-- `livereload`: `livereload [path] [options]`
+- `livereload`: `livereload`
 - `sass`: `sass --watch --no-source-map --style expanded styles.scss:styles.css`
-- `uncss`: `uncss email-shell.html > styles.css`
+- `uncss`: `uncss --noBanner email-all-components.html > styles.css`
 
 ## Tooling Notes:
 
@@ -27,14 +27,3 @@ A simple way to manage your primary stylesheet for your email template. You can 
 ### `uncss`
 
 Run your HTML file through this package and `uncss` will remove any unused CSS classes, which is great for reducing the final file size of your final HTML email file.
-
-## To Do's:
-
-- [ ] Update `email-shell.html` to use 2026 code
-- [ ] Set up typography hierarchy (`h1`, `h2`, `h3`, `h4`, `p`, `small`)
-- [ ] Set up image hierarchy (full width, 2 col (50:50), 2 col (75:25))
-- [ ] Set up container hierarchy (row)
-- [ ] Set up column structures: 1 col, 2 col (50:50), 2 col (75:25)
-- [ ] Create `in-progress` directory for in-progress email files
-- [ ] Create `output` directory for final, production ready email files
-- [ ] Create agent skill for generating emails
